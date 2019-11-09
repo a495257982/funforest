@@ -328,9 +328,10 @@ $(function () {
             "type": "function"
         }
     ];
+
     var infoContract = web3.eth.contract(webABI);
     //合约地址
-    var info = infoContract.at('0x77A8858Cc6C7f2Bf70FF6934A8f8aD1376689cfE');
+    var info = infoContract.at('0x29D92737BBf9282B8a3055AEBa45E464B1468F1d');
   //  console.log("info:",info);
    // info.st(function (err,res) {
       //  console.log("st:");
@@ -454,32 +455,70 @@ $(function () {
     //     // console.log("money:",web3.utils.toHex(result.v))
     // });
     //确定投注
-    $(".bet-ok").click(function () {
+    $(".affirm_btn").click(function () {
         // $(".alertUsBox").show();
         // let amount=Number($(".specialNum").text());
-        //let amount=0.01;
+        // let amount=0.01;
         //alert("投注:"+"邀请码："+inviteCode+"当前账户："+web3.eth.coinbase);
         //var code = "0x41b3d1ee30853beef7d14b372ea63b7756596c76";
-        //var toAccount='0x41b3d1ee30853beef7d14b372ea63b7756596c76';
+        // var toAccount='0x41b3d1ee30853beef7d14b372ea63b7756596c76';
+        $(".modal_hide").hide();
+       // var message = {from: web3.eth.defaultAccount, to:toAccount, value: web3.toWei(amount, 'ether')};
+        console.log($('.specialNum').text());   //   /100000000
+        console.log($('.form-control_input').val());
 
-       // var message = {from: web  3.eth.defaultAccount, to:toAccount, value: web3.toWei(amount, 'ether')};
-        info.invest.sendTransaction(web3.eth.coinbase,web3.toWei($(".specialNum").html()/100000000,'ether'), inviteCode,'a',{value:web3.toWei($(".specialNum").html()/100000000,'ether')},function (err,result) {
+        //转换
+        var integer = $(".specialNum").text();
+        var decimals = integer/10000;
+        console.log(decimals);
+        info.invest.sendTransaction(web3.eth.coinbase,web3.toWei(decimals,'ether'),inviteCode,$(".form-control_input").val(),{value:web3.toWei(decimals,'ether')},function (err,result) {
             console.log("调用合约");
+
             if(err){
                 console.log(err);
             }else {
 
                 console.log(result);
             }
-        })
-        web3.eth.sendTransaction(message, function(err, address) {
-           if (!err)
-              console.log(address); // "0x7f9fade1c0d57a7af66ab4ead7c2eb7b11a91385"
-      });
+        });
+      //   web3.eth.sendTransaction(message, function(err, address) {
+      //      if (!err)
+      //         console.log(address); // "0x7f9fade1c0d57a7af66ab4ead7c2eb7b11a91385"
+      // });
     });
+
+
+    $(".bet-ok").click(function(){
+        $(".modal_hide").show();
+    });
+
+
+    //提取
+    $('#withdraw').click(function(){
+        console.log($('#withdraw').val());
+        info. userWithDraw.sendTransaction(web3.eth.coinbase,function (err,result) {
+            console.log('111');
+            if(err){
+                console.log(err);
+            }else {
+                console.log(result);
+            }
+        });
+    });
+
+
+
+
+
+
     //用户切换metamask账号
     ethereum.on('accountsChanged', function (accounts) {
         console.log("切换账户：",accounts[0])
         $("#addre").text(accounts[0])
     })
-})
+});
+
+
+
+
+

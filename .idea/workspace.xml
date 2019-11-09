@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab4f32bd-e8a1-4c41-8ccb-d80af22f93ce" name="Default Changelist" comment="" />
+    <list default="true" id="ab4f32bd-e8a1-4c41-8ccb-d80af22f93ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/eth.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/eth.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,24 +23,35 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RDo6p8FWQR01abJXEnbPzjMOyL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\jiangjieProjects\1305\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\1305demo" />
       <recent name="E:\projects\1305demo\lib" />
       <recent name="E:\projects\1305\lib" />
       <recent name="E:\jiangjieProjects\1305\lib" />
       <recent name="E:\jiangjieProjects\1305\js" />
-      <recent name="E:\jiangjieProjects\1305\lib\swiper" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\jiangjieProjects\1305\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,10 +107,35 @@
       <workItem from="1572937564835" duration="307000" />
       <workItem from="1572941907411" duration="2000" />
       <workItem from="1572944253621" duration="3000" />
+      <workItem from="1573019209095" duration="1924000" />
+      <workItem from="1573106233794" duration="2307000" />
+      <workItem from="1573112039953" duration="2678000" />
+      <workItem from="1573115189279" duration="1055000" />
+      <workItem from="1573117305181" duration="781000" />
+      <workItem from="1573118573583" duration="3216000" />
+      <workItem from="1573174715449" duration="26307000" />
+      <workItem from="1573260761170" duration="8294000" />
+      <workItem from="1573272972624" duration="7068000" />
+      <workItem from="1573285327135" duration="277000" />
+      <workItem from="1573286672327" duration="791000" />
+      <workItem from="1573287840963" duration="3148000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
